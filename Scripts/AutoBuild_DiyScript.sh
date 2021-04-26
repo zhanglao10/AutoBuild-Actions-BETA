@@ -4,7 +4,7 @@
 # AutoBuild DiyScript
 
 Diy_Core() {
-	Author=老张专用
+	Author=老张专用QQ:547729502
 	Default_Device=x86_64
 	Short_Firmware_Date=true
 
