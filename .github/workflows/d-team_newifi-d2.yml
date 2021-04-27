@@ -69,7 +69,14 @@ jobs:
           /etc/php
         sudo -E apt-get -y autoremove --purge
         sudo -E apt-get clean
-      
+        
+    - name: openwrt常用软件包
+      run: |
+        cd package
+        mkdir openwrt-packages
+        cd openwrt-packages
+        git clone https://github.com/kenzok8/openwrt-packages
+        
     - name: Clone source code
       run: |
         git clone -b $REPO_BRANCH $REPO_URL openwrt
